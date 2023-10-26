@@ -5,7 +5,14 @@ import Confetti from 'react-confetti'
 
 const App = () => {
 
-  const imgArray = ["./dice.png", "./dice (1).png", "./dice (2).png", "./dice (3).png", "./dice (4).png", "./dice (5).png"]
+  const imgArray = [
+    "./dice.png",
+    "./dice (1).png",
+    "./dice (2).png",
+    "./dice (3).png",
+    "./dice (4).png",
+    "./dice (5).png"
+  ];
 
   const [dice, setDice] = React.useState(allNewDice());
   const [tenzies, setTenzies] = React.useState(false)
@@ -53,7 +60,7 @@ const App = () => {
 
   function generateDice() {
     return {
-      value: Math.floor(Math.random() * 6 + 1),
+      value: imgArray[Math.floor(Math.random() * 6)],
       isHeld: false,
       id: nanoid(),
     };

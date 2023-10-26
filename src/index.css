@@ -13,6 +13,10 @@ body{
 
 
 }
+img{
+    height: 80%;
+    width: 80%;
+}
 main{
     display: flex;
     flex-direction: column;

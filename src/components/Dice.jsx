@@ -2,11 +2,12 @@ import React from 'react';
 
 const Dice = (props) => {
     let styles = {
-      backgroundColor: props.isHeld ? "#27ae60" : "white",
+      backgroundColor: props.isHeld ? "#34495e" : "white",
     };
     return (
         <div className='dice' onClick={props.holdDice} style={styles}>
-            {props.value}
+            {/* {props.value} */}
+            <img src={props.value} alt="" />
 
         </div>
     );
